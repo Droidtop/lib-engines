@@ -1,0 +1,17 @@
+[package]
+name = "engines-detect"
+description = "Which engine a game folder was made with, by droidtop-platforms' engines database: the same rules droidtop and Enginehost classify with"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[lib]
+name = "engines_detect"
+path = "src/lib.rs"
+
+[dependencies]
+serde_json.workspace = true
+# The file-head rules of the engines database are regular expressions.
+regex.workspace = true
